@@ -1,0 +1,223 @@
+/* config */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background-color: #e9e7e1;
+    color: #252525;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.7;
+}
+
+
+/* header */
+
+header {
+    min-height: 500px;
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
+        url("../images/nier_wallpaper.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: #f2f0e8;
+    text-align: center;
+
+    border-bottom: 4px solid #b7b3a8;
+    padding: 40px 20px;
+}
+
+header h1 {
+    max-width: 900px;
+    margin: 0;
+    font-size: 3rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+
+/* main content */
+
+main {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+section {
+    margin-bottom: 70px;
+}
+
+#introduccion,
+#gameplay,
+#personajes,
+#informacion {
+    background-color: rgba(255, 255, 255, 0.35);
+    padding: 40px;
+    border: 1px solid #d0cdc4;
+}
+
+
+/* titles */
+
+section h2 {
+    color: #202020;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #b7b3a8;
+}
+
+p {
+    font-size: 1.05rem;
+    text-align: justify;
+}
+
+
+/* img 1 */
+
+#hero {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+#hero img {
+    width: 100%;
+    max-height: 550px;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+    border: 1px solid #b7b3a8;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+
+/* img 2*/
+
+#gameplay > div {
+    text-align: center;
+    margin: 40px 0;
+}
+
+#gameplay > div img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border: 1px solid #b7b3a8;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+
+/* characters (game) */
+
+#personajes .card {
+    height: 100%;
+    border: 1px solid #b7b3a8;
+    border-radius: 0;
+    background-color: #1c1c1c;
+    color: #f2f0e8;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#personajes .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+#personajes .card-img-top {
+    height: 400px;
+    object-fit: contain;
+    background-color: #111111;
+    padding: 10px;
+}
+
+#personajes .card-body {
+    text-align: center;
+    padding: 15px;
+}
+
+#personajes .card-title {
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+
+/* links */
+
+a {
+    color: #444444;
+    font-weight: bold;
+    text-decoration: none;
+    border-bottom: 1px solid #444444;
+    transition: 0.3s;
+}
+
+a:hover {
+    color: #000000;
+    border-bottom: 2px solid #000000;
+}
+
+
+/* footer */
+
+footer {
+    background-color: #1c1c1c;
+    color: #f2f0e8;
+    text-align: center;
+    padding: 25px 20px;
+    margin-top: 30px;
+}
+
+footer p {
+    margin: 0;
+    text-align: center;
+}
+
+
+/* design */
+
+@media (max-width: 768px) {
+
+    header {
+        min-height: 350px;
+        padding: 30px 15px;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    section h2 {
+        font-size: 1.6rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    main {
+        padding: 25px 15px;
+    }
+
+    #introduccion,
+    #gameplay,
+    #personajes,
+    #informacion {
+        padding: 25px 20px;
+    }
+
+    #personajes .card-img-top {
+        height: 350px;
+    }
+}
