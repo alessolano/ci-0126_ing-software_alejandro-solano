@@ -103,12 +103,12 @@ p {
 
 /* img 2*/
 
-#gameplay > div {
+#universo > div {
     text-align: center;
     margin: 40px 0;
 }
 
-#gameplay > div img {
+#universo > div img {
     max-width: 100%;
     height: auto;
     display: block;
@@ -241,6 +241,81 @@ footer p {
     border: 1px solid #b7b3a8;
 }
 
+/* form */
+
+#encuesta {
+    background-color: rgba(255, 255, 255, 0.35);
+    padding: 40px;
+    border: 1px solid #d0cdc4;
+}
+
+#nierForm {
+    max-width: 800px;
+    margin: 30px auto 0;
+}
+
+.form-group {
+    margin-bottom: 25px;
+}
+
+.form-group > label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #b7b3a8;
+    background-color: #f7f6f2;
+    color: #252525;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.form-group input[type="radio"] {
+    margin-right: 5px;
+}
+
+.form-group input[type="radio"] + label {
+    display: inline;
+    font-weight: normal;
+}
+
+#submitButton {
+    background-color: #1c1c1c;
+    color: #f2f0e8;
+    border: 1px solid #1c1c1c;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#submitButton:hover {
+    background-color: #444444;
+}
+
+.error-message {
+    display: block;
+    color: #9b2226;
+    font-size: 0.9rem;
+    margin-top: 5px;
+}
+
+.success-message {
+    color: #31572c;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
 @media (max-width: 768px) {
 
     #hero {
@@ -251,4 +326,50 @@ footer p {
         height: 350px;
     }
 
+}
+
+/* accordion */
+
+#universo {
+    background-color: rgba(255, 255, 255, 0.35);
+    padding: 40px;
+    border: 1px solid #d0cdc4;
+}
+
+#nierAccordion {
+    max-width: 900px;
+    margin: 30px auto 0;
+}
+
+#nierAccordion .accordion-item {
+    border: 1px solid #b7b3a8;
+    border-radius: 0;
+}
+
+#nierAccordion .accordion-button {
+    background-color: #1c1c1c;
+    color: #f2f0e8;
+    border-radius: 0;
+    font-weight: bold;
+}
+
+#nierAccordion .accordion-button:not(.collapsed) {
+    background-color: #444444;
+    color: #f2f0e8;
+    box-shadow: none;
+}
+
+#nierAccordion .accordion-button:focus {
+    box-shadow: none;
+    border-color: #b7b3a8;
+}
+
+#nierAccordion .accordion-body {
+    background-color: #f7f6f2;
+    color: #252525;
+    padding: 25px;
+}
+
+#nierAccordion .accordion-body p {
+    margin: 0;
 }
