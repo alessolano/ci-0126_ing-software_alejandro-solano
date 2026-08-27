@@ -221,3 +221,34 @@ footer p {
         height: 350px;
     }
 }
+
+/* carousel */
+
+#hero {
+    background-color: rgba(255, 255, 255, 0.35);
+    padding: 40px;
+    border: 1px solid #d0cdc4;
+}
+
+#hero .carousel {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+#hero .carousel-item img {
+    height: 400px;
+    object-fit: cover;
+    border: 1px solid #b7b3a8;
+}
+
+@media (max-width: 768px) {
+
+    #hero {
+        padding: 25px 20px;
+    }
+
+    #hero .carousel-item img {
+        height: 350px;
+    }
+
+}

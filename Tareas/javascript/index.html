@@ -17,16 +17,101 @@
 <body>
 
     <header>
-        <h1>¿Por qué NieR:Automata forma parte del octavo arte?</h1>
+        <h1>El arte de NieR:Automata</h1>
     </header>
 
     <main>
 
         <section id="hero">
-            
-            <img
-                src="images/nier_main.jpg"
-            >
+            <div id="nierCarousel" class="carousel slide" data-bs-ride="carousel">
+
+                <div class="carousel-indicators">
+
+                    <button
+                        type="button"
+                        data-bs-target="#nierCarousel"
+                        data-bs-slide-to="0"
+                        class="active"
+                        aria-current="true"
+                        aria-label="Imagen 1">
+                    </button>
+
+                    <button
+                        type="button"
+                        data-bs-target="#nierCarousel"
+                        data-bs-slide-to="1"
+                        aria-label="Imagen 2">
+                    </button>
+
+                    <button
+                        type="button"
+                        data-bs-target="#nierCarousel"
+                        data-bs-slide-to="2"
+                        aria-label="Imagen 3">
+                    </button>
+
+                </div>
+
+                <div class="carousel-inner">
+
+                    <div class="carousel-item active">
+                        <img
+                            src="images/nier_main.jpg"
+                            class="d-block w-100"
+                            alt="NieR:Automata">
+                    </div>
+
+                    <div class="carousel-item">
+                        <img
+                            src="images/nier_main2.jpg"
+                            class="d-block w-100"
+                            alt="Escena de NieR:Automata">
+                    </div>
+
+                    <div class="carousel-item">
+                        <img
+                            src="images/nier_main3.jpg"
+                            class="d-block w-100"
+                            alt="Personajes de NieR:Automata">
+                    </div>
+
+                </div>
+
+                <button
+                    class="carousel-control-prev"
+                    type="button"
+                    data-bs-target="#nierCarousel"
+                    data-bs-slide="prev">
+
+                    <span
+                        class="carousel-control-prev-icon"
+                        aria-hidden="true">
+                    </span>
+
+                    <span class="visually-hidden">
+                        Anterior
+                    </span>
+
+                </button>
+
+                <button
+                    class="carousel-control-next"
+                    type="button"
+                    data-bs-target="#nierCarousel"
+                    data-bs-slide="next">
+
+                    <span
+                        class="carousel-control-next-icon"
+                        aria-hidden="true">
+                    </span>
+
+                    <span class="visually-hidden">
+                        Siguiente
+                    </span>
+
+                </button>
+
+            </div>
             
         </section>
 
