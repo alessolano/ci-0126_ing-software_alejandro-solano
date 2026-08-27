@@ -219,18 +219,74 @@
                     </a>
                 </p>
 
-                <p>
-                    Explorar también
-                    <!-- Colocar aquí el hipervínculo -->
-                    <a href="https://nier.fandom.com/es/wiki/NieR_RepliCant" target="_blank" rel="noopener noreferrer">
-                        NieR:Replicant
-                    </a>
-                </p>
-
             </div>
+
+            <button
+                type="button"
+                class="btn btn-dark"
+                data-bs-toggle="modal"
+                data-bs-target="#nierModal">
+                Ver información complementaria
+            </button>
+
         </section>
 
     </main>
+
+    <!-- Modal -->
+    <div
+        class="modal fade"
+        id="nierModal"
+        tabindex="-1"
+        aria-labelledby="nierModalLabel"
+        aria-hidden="true">
+
+        <div class="modal-dialog">
+
+            <div class="modal-content">
+
+                <div class="modal-header">
+
+                    <h2 class="modal-title" id="nierModalLabel">
+                        Información complementaria
+                    </h2>
+
+                    <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Cerrar">
+                    </button>
+
+                </div>
+
+                <div class="modal-body">
+
+                    <p>
+                        Explorar también
+                        <!-- Colocar aquí el hipervínculo -->
+                        <a href="https://nier.fandom.com/es/wiki/NieR_RepliCant" target="_blank" rel="noopener noreferrer">
+                            NieR:Replicant
+                        </a>
+                    </p>
+
+                </div>
+
+                <div class="modal-footer">
+
+                    <button
+                        type="button"
+                        class="btn btn-secondary"
+                        data-bs-dismiss="modal">
+                        Cerrar
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
 
     <footer>
         <p>Alejandro Solano C27534 - 2026</p>
